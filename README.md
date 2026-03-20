@@ -47,8 +47,8 @@ Production-ready **fact-checking system** that verifies claims using web evidenc
 
 ---
 
-### 💬 [Sentiment Analysis](https://github.com/AdetyaJamwal04/Sentiment_Analysis)
-Sentiment analysis system with model training pipeline and API inference endpoint.
+### 💬 [MoodMeter](https://github.com/AdetyaJamwal04/MoodMeter)
+A transformer-based sentiment analysis application that classifies text as positive or negative using a fine-tuned DistilBERT model. Includes a Flask REST API and an interactive web interface.
 
 `Python` `FastAPI` `NLP`
 
