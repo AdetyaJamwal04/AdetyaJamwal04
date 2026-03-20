@@ -40,6 +40,13 @@ Production-ready **fact-checking system** that verifies claims using web evidenc
 
 ---
 
+### 🧠 [Brain_MRI_Diffusion](https://github.com/AdetyaJamwal04/Brain-MRI-Diffusion.git)
+This project explores the use of **diffusion models** for synthetic data generation to improve medical image classification performance.
+
+`PyTorch` `OpenCV` `NumPy` `Matplotlib` `torchvision`
+
+---
+
 ### 🚦 [Traffic Sign Recognition](https://github.com/AdetyaJamwal04/Traffic-Sign-Recognition-Using-Deep-Learning)
 **CNN-based classification** of 43 German traffic sign classes using the GTSRB dataset. Includes data augmentation, evaluation metrics, and a Streamlit UI for real-time recognition.
 
@@ -66,7 +73,7 @@ A transformer-based sentiment analysis application that classifies text as posit
 | **Retrieval** | FAISS, ChromaDB, BM25, Cross-Encoders |
 | **APIs** | FastAPI, Flask |
 | **DevOps** | Docker, GitHub Actions, AWS EC2 |
-| **Tools** | Ollama, Groq, Streamlit, OpenCV |
+| **Tools** | Ollama, Groq, Streamlit, OpenCV  |
 
 </div>
 
