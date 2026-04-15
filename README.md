@@ -19,6 +19,13 @@ I design and build **end-to-end AI systems** — from retrieval pipelines and mu
 
 ## 🚀 Featured Projects
 
+### 🧠 [samael_voice_assistant](https://github.com/AdetyaJamwal04/samael_voice_assistant)
+A production-grade conversational AI voice assistant that combines sophisticated language understanding with persistent semantic memory. Samael runs as a hybrid system—a backend brain in WSL/Linux with a native Windows voice client—delivering natural voice interactions on Windows while leveraging the power of Google's Gemini AI.
+
+'Gemini (gemini-2.5-flash)' 'wsl' 
+
+---
+
 ### 🔬 [Agentic Research System](https://github.com/AdetyaJamwal04/agentic-research-system)
 AI-powered **multi-agent research pipeline** with 12 autonomous steps — from query analysis to self-critique and iterative refinement. Produces citation-backed answers with confidence scores.
 
