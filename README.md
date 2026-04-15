@@ -80,7 +80,7 @@ A transformer-based sentiment analysis application that classifies text as posit
 | **Retrieval** | FAISS, ChromaDB, BM25, Cross-Encoders |
 | **APIs** | FastAPI, Flask |
 | **DevOps** | Docker, GitHub Actions, AWS EC2 |
-| **Tools** | Ollama, Groq, Streamlit, OpenCV  |
+| **Tools** | Ollama, Groq, Streamlit, OpenCV, Gemini  |
 
 </div>
 
