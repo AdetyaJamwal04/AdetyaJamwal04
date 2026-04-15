@@ -19,10 +19,10 @@ I design and build **end-to-end AI systems** — from retrieval pipelines and mu
 
 ## 🚀 Featured Projects
 
-### 🧠 [samael_voice_assistant](https://github.com/AdetyaJamwal04/samael_voice_assistant)
+### 🧠 [Samael voice assistant](https://github.com/AdetyaJamwal04/samael_voice_assistant)
 A production-grade conversational AI voice assistant that combines sophisticated language understanding with persistent semantic memory. Samael runs as a hybrid system—a backend brain in WSL/Linux with a native Windows voice client—delivering natural voice interactions on Windows while leveraging the power of Google's Gemini AI.
 
-'Gemini (gemini-2.5-flash)' 'wsl' 
+`Gemini (gemini-2.5-flash)` `Wsl` `ChromaDB` `Langchain` `Langgraph` `Uvicorn` `FastApi` `Faster-whisper`
 
 ---
 
