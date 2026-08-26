@@ -14,38 +14,15 @@ GenAI · Agentic Systems · Advanced RAG · ML Engineering
 
 ## 🌐 THE SYSTEMS I BUILD
 
-```text
-                         ┌───────────────────────┐
-                         │     COMPLEX QUERY     │
-                         └───────────┬───────────┘
-                                     │
-                                     ▼
-                         ┌───────────────────────┐
-                         │  DECOMPOSE & STRUCTURE│
-                         └───────────┬───────────┘
-                                     │
-                      ┌──────────────┴──────────────┐
-                      ▼                             ▼
-             ┌─────────────────┐          ┌─────────────────┐
-             │    RETRIEVAL    │          │    REASONING    │
-             │ Search · RAG    │          │ NLI · LLMs      │
-             └────────┬────────┘          └────────┬────────┘
-                      │                            │
-                      └──────────────┬─────────────┘
-                                     ▼
-                         ┌───────────────────────┐
-                         │   VALIDATE & REFLECT  │
-                         └───────────┬───────────┘
-                                     │
-                              gaps / conflicts
-                                     │
-                                     └──────► iterate
-                                     │
-                                     ▼
-                         ┌───────────────────────┐
-                         │  GROUNDED OUTPUT      │
-                         │  + EVIDENCE + ACTION  │
-                         └───────────────────────┘
+```mermaid
+flowchart TD
+    A[COMPLEX QUERY] --> B[DECOMPOSE & STRUCTURE]
+    B --> C["RETRIEVAL<br/>Search · RAG"]
+    B --> D["REASONING<br/>NLI · LLMs"]
+    C --> E[VALIDATE & REFLECT]
+    D --> E
+    E -- gaps / conflicts --> B
+    E -- grounded --> F["GROUNDED OUTPUT<br/>+ Evidence + Action"]
 ```
 
 ---
@@ -223,19 +200,19 @@ Intervention timing
 ```text
 ┌──────────────────────────────────────────────────────────────────────┐
 │                                                                      │
-│  01 / MODELS ARE COMPONENTS, NOT SYSTEMS.                           │
+│  01 / MODELS ARE COMPONENTS, NOT SYSTEMS.                            │
 │      Reliability emerges from orchestration, boundaries,             │
 │      validation, and failure handling.                               │
 │                                                                      │
-│  02 / RETRIEVAL IS PART OF REASONING.                               │
+│  02 / RETRIEVAL IS PART OF REASONING.                                │
 │      An intelligent system is only as grounded as the                │
 │      information it can discover, filter, and verify.                │
 │                                                                      │
-│  03 / SYSTEMS REQUIRE EVALUATION, NOT VIBES.                        │
+│  03 / SYSTEMS REQUIRE EVALUATION, NOT VIBES.                         │
 │      Fluency is not correctness. AI systems need measurable          │
 │      behavior, regression testing, and adversarial evaluation.       │
 │                                                                      │
-│  04 / GROUNDING PRECEDES GENERATION.                                │
+│  04 / GROUNDING PRECEDES GENERATION.                                 │
 │      Useful intelligence needs traceable evidence and                │
 │      explicit boundaries around uncertainty.                         │
 │                                                                      │
