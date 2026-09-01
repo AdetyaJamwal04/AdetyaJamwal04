@@ -154,7 +154,7 @@ QUERY → SYNTHESIS → SUB-QUESTION GENERATION → SEARCH & RETRIEVAL
 
 ---
 
-### `03` — [AI Video Assistant](https://github.com/AdetyaJamwal04/AI-Video-Assistant)
+### `03` — [Bodha — Understand Anything You Watch](https://github.com/AdetyaJamwal04/AI-Video-Assistant)
 
 **Multimodal Video Intelligence Platform**
 
