@@ -1,104 +1,56 @@
 <div align="center">
 
-# ⚡ ADETYA JAMWAL
+# Adetya Jamwal
 
-### `AI ENGINEER` // `INTELLIGENT SYSTEMS`
+**AI Engineer** — Retrieval-Augmented Systems · Agentic Architectures · Applied ML
 
-**GenAI · Agentic Systems · RAG · ML Engineering**
-
-*Building systems that retrieve, reason, and act — with engineering boundaries that make AI more reliable.*
+*Building systems that retrieve, reason, and act — with engineering discipline that makes AI reliable.*
 
 <br/>
 
 [![GitHub](https://img.shields.io/badge/GitHub-AdetyaJamwal04-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/AdetyaJamwal04)
-[![Python](https://img.shields.io/badge/Python-3.11%20%7C%203.12%20%7C%203.13-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
-[![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?style=flat-square&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
-[![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)](https://pytorch.org)
-[![LangGraph](https://img.shields.io/badge/LangGraph-Agentic%20Systems-1C3C3C?style=flat-square&logo=langchain&logoColor=white)](https://langchain-ai.github.io/langgraph/)
+[![Python](https://img.shields.io/badge/Python-3.12%20%7C%203.13-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
+[![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)](https://pytorch.org)
+[![Next.js](https://img.shields.io/badge/Next.js-black?style=flat-square&logo=next.js&logoColor=white)](https://nextjs.org)
+[![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logo=langchain&logoColor=white)](https://langchain-ai.github.io/langgraph/)
 
 </div>
 
 ---
 
-## 🌐 THE SYSTEMS I BUILD
-
-```mermaid
-flowchart TD
-
-    A[Complex Query] --> B[Decompose & Structure]
-
-    B --> C[Retrieval / Search / RAG]
-    B --> D[Reasoning / NLI / LLMs]
-
-    C --> E[Validate & Reflect]
-    D --> E
-
-    E -->|Gaps / Conflicts| B
-    E -->|Grounded| F[Grounded Output + Evidence]
-
-    classDef input fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#1e3a8a
-    classDef process fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#78350f
-    classDef validate fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#581c87
-    classDef output fill:#d1fae5,stroke:#059669,stroke-width:2px,color:#064e3b
-
-    class A input
-    class B,C,D process
-    class E validate
-    class F output
-
-    linkStyle 5 stroke:#dc2626,stroke-width:2px
-    linkStyle 6 stroke:#059669,stroke-width:2px
-```
-
----
-
-## ⚡ WHAT I BUILD
+## What I Build
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### 🔎 Retrieval & Evidence
+### Retrieval & Verification
 
-* **Claim decomposition** — breaking complex propositions into verifiable units
-* **Hybrid retrieval** — multi-provider search and content extraction
-* **Neural reranking** — passage-level cross-encoder scoring
-* **NLI verification** — stance and contradiction detection
+Claim decomposition into atomic propositions · multi-provider evidence retrieval · cross-encoder neural reranking · NLI-based stance detection · provenance conflict resolution · calibrated verdict synthesis
 
 </td>
-
 <td width="50%" valign="top">
 
-### 🧠 Agentic Systems
+### Agentic Systems
 
-* **Stateful workflows** — graph-based execution with LangGraph
-* **Query decomposition** — breaking complex research into parallel paths
-* **Reflection loops** — identifying evidence gaps and iterating
-* **Structured execution** — typed schemas and controlled tool flows
+LangGraph state machines · query decomposition into parallel research paths · iterative reflection loops with gap detection · structured schemas and controlled tool execution · streaming APIs
 
 </td>
 </tr>
-
 <tr>
 <td width="50%" valign="top">
 
-### 📈 ML Systems
+### Multimodal Intelligence
 
-* **Feature engineering** — high-dimensional time-series representations
-* **Anomaly detection** — Autoencoders, Isolation Forest, One-Class SVM
-* **Sequence modeling** — PyTorch LSTM for RUL prediction
-* **Decision systems** — reinforcement-learning-based intervention policies
+Video/audio transcription with Faster-Whisper · conversational RAG over media content · structured executive summaries · real-time SSE streaming · multi-language document generation
 
 </td>
-
 <td width="50%" valign="top">
 
-### ⚙️ AI Infrastructure
+### ML Systems & Infrastructure
 
-* **Async APIs** — FastAPI services and streaming endpoints
-* **Data systems** — PostgreSQL, pgvector, Alembic
-* **Caching** — Redis-based multi-tier caching
-* **Engineering discipline** — Docker, testing, evaluation and security controls
+Time-series feature engineering · anomaly detection (Autoencoders, Isolation Forest) · LSTM sequence modeling · reinforcement learning decision engines · FastAPI services · Docker · PostgreSQL
 
 </td>
 </tr>
@@ -106,199 +58,141 @@ flowchart TD
 
 ---
 
-## 🧬 FEATURED SYSTEMS
+## Featured Systems
 
-### `01` — TATHVYN
+### `01` — [Tathvyn](https://github.com/AdetyaJamwal04/Tathvyn-Evidence-Intelligence-Claim-Verification-Engine)
 
-#### **Evidence Intelligence & Claim Verification Engine**
+**Evidence Intelligence & Claim Verification Engine**
 
-An evidence-driven claim verification system combining atomic decomposition, multi-source retrieval, neural reranking, NLI-based stance detection, and grounded verdict generation.
+Automated claim verification platform that decomposes compound claims into atomic propositions, retrieves live evidence from multiple search providers, cross-examines it using cross-encoder reranking and DeBERTa NLI, resolves contradictions through provenance clustering, and synthesizes calibrated verdicts.
 
-```text
-CLAIM
-  │
-  ▼
-DECOMPOSE ──────────────► Atomic sub-claims
-  │
-  ▼
-RETRIEVE ───────────────► Tavily + Brave
-  │
-  ▼
-RERANK ─────────────────► Cross-Encoder
-  │
-  ▼
-VERIFY ─────────────────► DeBERTa / DistilRoBERTa NLI
-  │
-  ▼
-VALIDATE ───────────────► Temporal + Numeric + Conflict Checks
-  │
-  ├──── gaps ───────────► Reflection / Retrieval
-  │
-  ▼
-VERDICT ────────────────► Evidence + Grounded Synthesis
+```
+CLAIM → DECOMPOSE → RETRIEVE (Tavily + Brave) → RERANK (Cross-Encoder)
+  → VERIFY (DeBERTa NLI) → VALIDATE (Temporal + Numeric + Conflict)
+  → REFLECT (gap detection) → VERDICT (Grounded + Cited)
 ```
 
-|                 |                                                                          |
-| --------------- | ------------------------------------------------------------------------ |
-| **Engineering** | `FastAPI` · `LangGraph` · `PostgreSQL` · `pgvector` · `Redis` · `Docker` |
-| **Quality**     | 143 tests · ~90% coverage · evaluation harness                           |
-| **Security**    | prompt isolation · input sanitization · SSRF defenses                    |
+| | |
+|---|---|
+| **Stack** | `FastAPI` · `LangGraph` · `PostgreSQL` · `Docker` · `Gemini 2.0 Flash` |
+| **Quality** | 143 tests · ~90% coverage · evaluation harness |
+| **Security** | Prompt isolation · input sanitization · SSRF defense |
 
-*Tathvyn represents the architectural evolution of an earlier claim-verification prototype, [VeriFact](https://github.com/AdetyaJamwal04/VeriFact---Retrieval-Augmented-Neural-Claim-Verification-System).*
-
-**→ [Explore Tathvyn](https://github.com/AdetyaJamwal04/Tathvyn-Evidence-Intelligence-Claim-Verification-Engine)**
-
-<br/>
-
-### `02` — DEEPSEARCH
-
-#### **Agentic Research & Evidence Synthesis System**
-
-A stateful research pipeline that decomposes complex questions, gathers evidence, identifies knowledge gaps, and iteratively refines its search through reflection.
-
-```text
-USER QUERY
-    │
-    ├──► QUERY SYNTHESIS
-    │
-    ├──► SUB-QUESTION GENERATION
-    │
-    ├──► SEARCH & RETRIEVAL
-    │
-    ├──► EVIDENCE EXTRACTION
-    │
-    ├──► KNOWLEDGE STORE
-    │
-    └──► REFLECTION
-             │
-        gaps detected?
-             │
-             └──────────► iterate
-                           │
-                           ▼
-                    REPORT SYNTHESIS
-```
-
-|                  |                                                                           |
-| ---------------- | ------------------------------------------------------------------------- |
-| **Engineering**  | `LangGraph` · `LangChain` · `Gemini` · `Tavily` · `FastAPI` · `Streamlit` |
-| **Architecture** | stateful graph · cyclic reflection · structured schemas · streaming API   |
-
-**→ [Explore DeepSearch](https://github.com/AdetyaJamwal04/DeepSearch-Agentic-System)**
-
-<br/>
-
-### `03` — C-MAPSS
-
-#### **Spacecraft Predictive Maintenance System**
-
-End-to-end ML pipeline for anomaly detection, remaining-useful-life prediction, and decision support using NASA C-MAPSS turbofan telemetry.
-
-```text
-NASA TELEMETRY
-      │
-      ▼
-FEATURE ENGINEERING
-17 sensors ──────────► 188 engineered features
-      │
-      ▼
-ANOMALY DETECTION
-Autoencoder · Isolation Forest · One-Class SVM
-      │
-      ▼
-RUL PREDICTION
-PyTorch LSTM
-      │
-      ▼
-RISK / DECISION ENGINE
-      │
-      ▼
-Q-LEARNING
-Intervention timing
-```
-
-|                     |                                                                                   |
-| ------------------- | --------------------------------------------------------------------------------- |
-| **Engineering**     | `PyTorch` · `scikit-learn` · `LSTM` · `Autoencoders` · `Q-Learning` · `Streamlit` |
-| **Verified result** | `15.17 RMSE · R² = 0.87` on FD001                                                 |
-
-**→ [Explore C-MAPSS](https://github.com/AdetyaJamwal04/C-MAPSS-Spacecraft-Predictive-Maintenance-System)**
+*Architectural evolution of an earlier prototype, [VeriFact](https://github.com/AdetyaJamwal04/VeriFact---Retrieval-Augmented-Neural-Claim-Verification-System).*
 
 ---
 
-## 📊 ENGINEERING SIGNALS
+### `02` — [DeepSearch](https://github.com/AdetyaJamwal04/DeepSearch-Agentic-System)
 
-| Metric              |    Value | Project |
-| ------------------- | -------: | ------- |
-| Tests               |  **143** | Tathvyn |
-| Coverage            | **~90%** | Tathvyn |
-| Engineered Features |  **188** | C-MAPSS |
-| Architecture Docs   |   **26** | Tathvyn |
+**Agentic Research & Evidence Synthesis**
 
----
+Autonomous research agent that decomposes complex queries, runs multi-round web searches, extracts and deduplicates evidence, reflects on coverage gaps, and iteratively synthesizes cited markdown reports. Built as a LangGraph state machine with up to 3 research rounds.
 
-## 🛠️ TECHNICAL ARSENAL
+```
+QUERY → SYNTHESIS → SUB-QUESTION GENERATION → SEARCH & RETRIEVAL
+  → EVIDENCE EXTRACTION → KNOWLEDGE STORE → REFLECTION
+  → [gaps?] → iterate / REPORT SYNTHESIS (inline citations)
+```
 
-| Capability                   | Stack                                                                                    |
-| ---------------------------- | ---------------------------------------------------------------------------------------- |
-| **GenAI & Agents**           | `LangGraph` · `LangChain` · `Google Gemini` · `Groq`                                     |
-| **Retrieval & NLP**          | `Cross-Encoders` · `DeBERTa NLI` · `Sentence Transformers` · `Tavily` · `Brave`          |
-| **ML / Deep Learning**       | `PyTorch` · `scikit-learn` · `TensorFlow` · `LSTM` · `Autoencoders` · `NumPy` · `Pandas` |
-| **Backend & Data**           | `FastAPI` · `Pydantic` · `PostgreSQL` · `pgvector` · `Redis` · `SQLAlchemy` · `Alembic`  |
-| **Infrastructure & Quality** | `Docker` · `Docker Compose` · `pytest` · `ruff` · `mypy` · `uv` · `Render`               |
+| | |
+|---|---|
+| **Stack** | `LangGraph` · `Gemini` · `Tavily` · `FastAPI` · `Streamlit` |
+| **Architecture** | Stateful graph · cyclic reflection · structured schemas · streaming API |
 
 ---
 
-## 💡 HOW I THINK
+### `03` — [AI Video Assistant](https://github.com/AdetyaJamwal04/AI-Video-Assistant)
 
-```text
-┌──────────────────────────────────────────────────────────────────────┐
-│                                                                      │
-│  01 / MODELS ARE COMPONENTS, NOT SYSTEMS.                            │
-│      Reliability emerges from orchestration, boundaries,             │
-│      validation, and failure handling.                               │
-│                                                                      │
-│  02 / RETRIEVAL IS PART OF REASONING.                                │
-│      An intelligent system is only as grounded as the                │
-│      information it can discover, filter, and verify.                │
-│                                                                      │
-│  03 / SYSTEMS REQUIRE EVALUATION, NOT VIBES.                         │
-│      Fluency is not correctness. AI systems need measurable          │
-│      behavior, regression testing, and adversarial evaluation.       │
-│                                                                      │
-│  04 / GROUNDING PRECEDES GENERATION.                                 │
-│      Useful intelligence needs traceable evidence and                │
-│      explicit boundaries around uncertainty.                         │
-│                                                                      │
-└──────────────────────────────────────────────────────────────────────┘
+**Multimodal Video Intelligence Platform**
+
+Full-stack platform that transforms video/audio content into structured intelligence. Faster-Whisper transcription with int8 quantization, session-isolated conversational RAG over ChromaDB with exact timestamp citations, structured executive summaries via Mistral AI, multi-language translation, and publication-ready PDF/Markdown export.
+
+```
+VIDEO/AUDIO → FASTER-WHISPER (CTranslate2) → TRANSCRIPT
+  → STRUCTURED INTELLIGENCE (Mistral + Pydantic schemas)
+  → CONVERSATIONAL RAG (ChromaDB, session-isolated)
+  → MULTI-LANGUAGE TRANSLATION → PDF/MD EXPORT
+```
+
+| | |
+|---|---|
+| **Backend** | `FastAPI` · `Faster-Whisper` · `ChromaDB` · `Mistral AI` · `SSE Streaming` |
+| **Frontend** | `Next.js 15` · `TypeScript` · `Tailwind CSS` |
+| **Infrastructure** | `Docker` · `docker-compose` · `.github` CI · `pre-commit` hooks |
+| **Security** | SSRF defense · URL validation · 5 GB disk quota with TTL |
+
+---
+
+### `04` — [C-MAPSS Predictive Maintenance](https://github.com/AdetyaJamwal04/C-MAPSS-Spacecraft-Predictive-Maintenance-System)
+
+**Spacecraft Engine Intelligence**
+
+End-to-end predictive maintenance pipeline on NASA C-MAPSS turbofan telemetry. Anomaly detection (Isolation Forest, One-Class SVM, Deep Autoencoder), LSTM-based remaining useful life prediction, a rule-based + AI risk-scoring decision engine, and a Q-learning RL agent for optimal intervention timing.
+
+```
+TELEMETRY (17 sensors) → FEATURE ENGINEERING (188 features)
+  → ANOMALY DETECTION (Autoencoder · IF · OC-SVM)
+  → RUL PREDICTION (LSTM) → DECISION ENGINE → Q-LEARNING
+```
+
+| | |
+|---|---|
+| **Stack** | `PyTorch` · `scikit-learn` · `LSTM` · `Q-Learning` · `Streamlit` |
+| **Results** | 0.951 ROC-AUC (anomaly) · 15.17 RMSE, R²=0.87 (RUL) · 7-page dashboard |
+
+---
+
+## Technical Stack
+
+| Domain | Technologies |
+|---|---|
+| **GenAI & Agents** | LangGraph · LangChain · Google Gemini · Mistral AI · Groq |
+| **Retrieval & NLP** | Cross-Encoders · DeBERTa NLI · Sentence Transformers · ChromaDB · Tavily · Brave |
+| **ML / Deep Learning** | PyTorch · scikit-learn · TensorFlow · Faster-Whisper · LSTM · Autoencoders |
+| **Backend** | FastAPI · Pydantic · PostgreSQL · SQLAlchemy · Alembic · SSE Streaming |
+| **Frontend** | Next.js 15 · TypeScript · Tailwind CSS · Streamlit |
+| **Infrastructure** | Docker · Docker Compose · GitHub Actions · pre-commit · pytest · ruff · uv |
+
+---
+
+## How I Think
+
+```
+  MODELS ARE COMPONENTS, NOT SYSTEMS.
+  Reliability comes from orchestration, validation, and failure handling.
+
+  RETRIEVAL IS PART OF REASONING.
+  Intelligence is only as grounded as the evidence it can discover and verify.
+
+  EVALUATION, NOT VIBES.
+  Fluency is not correctness. AI systems need measurable behavior.
+
+  GROUNDING PRECEDES GENERATION.
+  Useful intelligence needs traceable evidence and explicit uncertainty boundaries.
 ```
 
 ---
 
-## 🧭 EXPLORING NEXT
+## Currently Exploring
 
-```text
-◉ Agentic Tool Use & Multi-Agent Systems
-◉ LLM Evaluation & Regression Testing
-◉ Advanced RAG & Knowledge Graph Retrieval
-◉ Production MLOps & AI Observability
-◉ Reliable AI System Architecture
+```
+  ◉ Multi-Agent Tool Use & Coordination
+  ◉ LLM Evaluation & Regression Testing
+  ◉ Advanced RAG & Knowledge Graph Retrieval
+  ◉ AI Observability & Production MLOps
 ```
 
 ---
 
 <div align="center">
 
-### `BUILD → MEASURE → VERIFY → ITERATE`
+`BUILD · MEASURE · VERIFY · ITERATE`
 
-*We build machines to reason — while remaining fascinated by the questions,*
-*poetry, and philosophy that resist computation.*
+*We build machines to reason — while staying curious about the questions, poetry, and philosophy that resist computation.*
 
 <br/>
 
 [![GitHub](https://img.shields.io/badge/GitHub-%40AdetyaJamwal04-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AdetyaJamwal04)
-
-<!-- Add your professional links here -->
 
 <!-- LinkedIn -->
 
