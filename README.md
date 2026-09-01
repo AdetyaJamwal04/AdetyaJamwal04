@@ -135,7 +135,7 @@ CLAIM → DECOMPOSE → RETRIEVE (Tavily + Brave) → RERANK (Cross-Encoder)
 
 ---
 
-### `02` — [DeepSearch](https://github.com/AdetyaJamwal04/DeepSearch-Agentic-System)
+### `02` — [Anveshaka-The-One-Who-Investigates.](https://github.com/AdetyaJamwal04/DeepSearch-Agentic-System)
 
 **Agentic Research & Evidence Synthesis**
 
