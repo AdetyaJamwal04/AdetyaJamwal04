@@ -19,6 +19,59 @@
 
 ---
 
+```mermaid
+flowchart LR
+
+    subgraph INPUT [" "]
+        direction TB
+        A["🔍 Claims &\nEvidence"]
+        B["🧠 Research\nQueries"]
+        C["🎬 Video &\nAudio"]
+        D["📡 Sensor\nTelemetry"]
+    end
+
+    subgraph CORE ["Engineering Core"]
+        direction TB
+        E["Decompose\n& Structure"]
+        F["Retrieve\n& Search"]
+        G["Reason\n& Verify"]
+        H["Evaluate\n& Reflect"]
+    end
+
+    subgraph OUTPUT [" "]
+        direction TB
+        I["Grounded\nVerdicts"]
+        J["Cited Research\nReports"]
+        K["Structured\nIntelligence"]
+        L["Predictive\nDecisions"]
+    end
+
+    A --> E
+    B --> E
+    C --> E
+    D --> E
+
+    E --> F --> G --> H
+
+    H -->|gaps| F
+
+    H --> I
+    H --> J
+    H --> K
+    H --> L
+
+    classDef inputNode fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#1e3a8a
+    classDef coreNode fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#78350f
+    classDef outputNode fill:#d1fae5,stroke:#059669,stroke-width:2px,color:#064e3b
+    classDef subgraphStyle fill:none,stroke:#e5e7eb,stroke-width:1px
+
+    class A,B,C,D inputNode
+    class E,F,G,H coreNode
+    class I,J,K,L outputNode
+```
+
+---
+
 ## What I Build
 
 <table>
