@@ -137,7 +137,7 @@ CLAIM → DECOMPOSE → RETRIEVE (Tavily + Brave) → RERANK (MS-MARCO Cross-Enc
 
 ---
 
-### `02` — [Anveshaka-The-One-Who-Investigates.](https://github.com/AdetyaJamwal04/DeepSearch-Agentic-System)
+### `02` — [Anveshaka](https://github.com/AdetyaJamwal04/Anveshaka-The-One-Who-Investigates.)
 
 **Agentic Research & Evidence Synthesis**
 
@@ -156,7 +156,7 @@ QUERY → SYNTHESIS → SUB-QUESTION GENERATION → SEARCH & RETRIEVAL
 
 ---
 
-### `03` — [Bodha — Understand Anything You Watch](https://github.com/AdetyaJamwal04/AI-Video-Assistant)
+### `03` — [Bodha](https://github.com/AdetyaJamwal04/Bodha-Understand-Anything-You-Watch)
 
 **Multimodal Video Intelligence Platform**
 
