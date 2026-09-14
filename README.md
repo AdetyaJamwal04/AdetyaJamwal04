@@ -113,7 +113,7 @@ Time-series feature engineering · anomaly detection (Autoencoders, Isolation Fo
 
 ## Featured Systems
 
-### `01` — [Tathvyn](https://github.com/AdetyaJamwal04/Tathvyn-Evidence-Intelligence-Claim-Verification-Engine) &nbsp; [![Live](https://img.shields.io/badge/Live-tathvyn--production.web.app-brightgreen?style=flat-square)](https://tathvyn-production.web.app)
+### `01` — [Tathvyn-Evidence-Intelligence-Claim-Verification-Engine](https://github.com/AdetyaJamwal04/Tathvyn-Evidence-Intelligence-Claim-Verification-Engine)
 
 **Evidence Intelligence & Claim Verification Engine**
 
@@ -137,7 +137,7 @@ CLAIM → DECOMPOSE → RETRIEVE (Tavily + Brave) → RERANK (MS-MARCO Cross-Enc
 
 ---
 
-### `02` — [Anveshaka](https://github.com/AdetyaJamwal04/Anveshaka-The-One-Who-Investigates.)
+### `02` — [Anveshaka-The-One-Who-Investigates.](https://github.com/AdetyaJamwal04/DeepSearch-Agentic-System)
 
 **Agentic Research & Evidence Synthesis**
 
@@ -156,7 +156,7 @@ QUERY → SYNTHESIS → SUB-QUESTION GENERATION → SEARCH & RETRIEVAL
 
 ---
 
-### `03` — [Bodha](https://github.com/AdetyaJamwal04/Bodha-Understand-Anything-You-Watch)
+### `03` — [Bodha — Understand Anything You Watch](https://github.com/AdetyaJamwal04/AI-Video-Assistant)
 
 **Multimodal Video Intelligence Platform**
 
