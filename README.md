@@ -113,7 +113,7 @@ Time-series feature engineering · anomaly detection (Autoencoders, Isolation Fo
 
 ## Featured Systems
 
-### `01` — [Tathvyn](https://github.com/AdetyaJamwal04/Tathvyn-Evidence-Intelligence-Claim-Verification-Engine)
+### `01` — [Tathvyn-Evidence-Intelligence-Claim-Verification-Engine](https://github.com/AdetyaJamwal04/Tathvyn-Evidence-Intelligence-Claim-Verification-Engine)
 
 **Evidence Intelligence & Claim Verification Engine**
 
