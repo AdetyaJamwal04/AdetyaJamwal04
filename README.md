@@ -139,20 +139,24 @@ CLAIM → DECOMPOSE → RETRIEVE (Tavily + Brave) → RERANK (MS-MARCO Cross-Enc
 
 ### `02` — [Anveshaka](https://github.com/AdetyaJamwal04/Anveshaka-The-One-Who-Investigates.)
 
-**Agentic Research & Evidence Synthesis**
+**Autonomous Deep Research Agent**
 
-Autonomous research agent that decomposes complex queries, runs multi-round web searches, extracts and deduplicates evidence, reflects on coverage gaps, and iteratively synthesizes cited markdown reports. Built as a LangGraph state machine with up to 3 research rounds.
+Full-stack, production-deployed research agent that decomposes complex queries into sub-questions, runs multi-round web searches with quality filtering, extracts and deduplicates evidence via LLM, reflects on coverage gaps, and iteratively synthesizes cited markdown reports. Built as an 8-stage LangGraph state machine with up to 3 research rounds.
 
 ```
-QUERY → SYNTHESIS → SUB-QUESTION GENERATION → SEARCH & RETRIEVAL
-  → EVIDENCE EXTRACTION → KNOWLEDGE STORE → REFLECTION
-  → [gaps?] → iterate / REPORT SYNTHESIS (inline citations)
+QUERY → SYNTHESIZE (intent, scope, entities) → DECOMPOSE (3-6 sub-questions)
+  → GENERATE SEARCH ANGLES (2-4 per sub-question) → EXECUTE (Tavily + quality filter)
+  → EXTRACT EVIDENCE (LLM + dedup) → KNOWLEDGE STORE → REFLECT (depth, diversity, specificity)
+  → [gaps?] → iterate / REPORT SYNTHESIS (inline [1][2] citations + references)
 ```
 
 | | |
 |---|---|
-| **Stack** | `LangGraph` · `Gemini` · `Tavily` · `FastAPI` · `Streamlit` |
-| **Architecture** | Stateful graph · cyclic reflection · structured schemas · streaming API |
+| **Backend** | `FastAPI` · `LangGraph` · `Gemini 3.5 Flash` · `Tavily` · `Pydantic v2` · `SSE Streaming` |
+| **Frontend** | `Next.js 15` · `React 19` · `TypeScript` · `Tailwind CSS` |
+| **Deployment** | `Google Cloud Run` · `Firebase App Hosting` (SSR) · `Docker` |
+| **Architecture** | 8-stage agent pipeline · cyclic reflection · semaphore-throttled LLM calls · heartbeat SSE |
+| **Quality** | Unit tests (quality filters, dedup, knowledge store, coverage) · sample research reports |
 
 ---
 
