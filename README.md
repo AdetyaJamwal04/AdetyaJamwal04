@@ -13,7 +13,7 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
 [![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)](https://pytorch.org)
 [![Next.js](https://img.shields.io/badge/Next.js-black?style=flat-square&logo=next.js&logoColor=white)](https://nextjs.org)
-[![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logo=langchain&logoColor=white)](https://langchain-ai.github.io/langgraph/)
+[![Google Cloud](https://img.shields.io/badge/Google%20Cloud-4285F4?style=flat-square&logo=google-cloud&logoColor=white)](https://cloud.google.com)
 
 </div>
 
@@ -103,7 +103,7 @@ Video/audio transcription with Faster-Whisper · conversational RAG over media c
 
 ### ML Systems & Infrastructure
 
-Time-series feature engineering · anomaly detection (Autoencoders, Isolation Forest) · LSTM sequence modeling · reinforcement learning decision engines · FastAPI services · Docker · PostgreSQL
+Time-series feature engineering · anomaly detection (Autoencoders, Isolation Forest) · LSTM sequence modeling · reinforcement learning decision engines · FastAPI services · Docker · Google Cloud Run
 
 </td>
 </tr>
@@ -113,29 +113,31 @@ Time-series feature engineering · anomaly detection (Autoencoders, Isolation Fo
 
 ## Featured Systems
 
-### `01` — [Tathvyn](https://github.com/AdetyaJamwal04/Tathvyn-Evidence-Intelligence-Claim-Verification-Engine)
+### `01` — [Tathvyn](https://github.com/AdetyaJamwal04/Tathvyn-Evidence-Intelligence-Claim-Verification-Engine) &nbsp; [![Live](https://img.shields.io/badge/Live-tathvyn--production.web.app-brightgreen?style=flat-square)](https://tathvyn-production.web.app)
 
 **Evidence Intelligence & Claim Verification Engine**
 
-Automated claim verification platform that decomposes compound claims into atomic propositions, retrieves live evidence from multiple search providers, cross-examines it using cross-encoder reranking and DeBERTa NLI, resolves contradictions through provenance clustering, and synthesizes calibrated verdicts.
+Full-stack, production-deployed platform for automated claim verification. Decomposes natural language claims into atomic propositions, retrieves multi-source web evidence, validates with cross-encoder reranking and DeBERTa NLI, resolves conflicts through provenance clustering, and synthesizes calibrated epistemic verdicts with Brier scoring.
 
 ```
-CLAIM → DECOMPOSE → RETRIEVE (Tavily + Brave) → RERANK (Cross-Encoder)
+CLAIM → DECOMPOSE → RETRIEVE (Tavily + Brave) → RERANK (MS-MARCO Cross-Encoder)
   → VERIFY (DeBERTa NLI) → VALIDATE (Temporal + Numeric + Conflict)
-  → REFLECT (gap detection) → VERDICT (Grounded + Cited)
+  → REFLECT (gap detection) → VERDICT (Brier-calibrated + Cited)
 ```
 
 | | |
 |---|---|
-| **Stack** | `FastAPI` · `LangGraph` · `PostgreSQL` · `Docker` · `Gemini 2.0 Flash` |
-| **Quality** | 143 tests · ~90% coverage · evaluation harness |
-| **Security** | Prompt isolation · input sanitization · SSRF defense |
+| **Backend** | `FastAPI` · `LangGraph` · `DeBERTa NLI` · `MS-MARCO CrossEncoder` · `Redis` · `Gemini 2.0 Flash` |
+| **Frontend** | `React 18` · `Vite` · `SSE Streaming` |
+| **Deployment** | `Google Cloud Run` (2 vCPU, 4 GiB) · `Firebase Hosting` (Global CDN) · `Google Secret Manager` |
+| **Quality** | 143 tests · ~90% coverage · 50-claim evaluation benchmark · 27 architecture docs |
+| **Security** | Prompt isolation · input sanitization · SSRF defense · rate limiting |
 
-*Architectural evolution of an earlier prototype, [VeriFact](https://github.com/AdetyaJamwal04/VeriFact---Retrieval-Augmented-Neural-Claim-Verification-System).*
+*Architectural evolution of [VeriFact](https://github.com/AdetyaJamwal04/VeriFact---Retrieval-Augmented-Neural-Claim-Verification-System), an earlier local-inference prototype.*
 
 ---
 
-### `02` — [DeepSearch](https://github.com/AdetyaJamwal04/DeepSearch-Agentic-System)
+### `02` — [Anveshaka](https://github.com/AdetyaJamwal04/Anveshaka-The-One-Who-Investigates.)
 
 **Agentic Research & Evidence Synthesis**
 
@@ -154,16 +156,16 @@ QUERY → SYNTHESIS → SUB-QUESTION GENERATION → SEARCH & RETRIEVAL
 
 ---
 
-### `03` — [AI Video Assistant](https://github.com/AdetyaJamwal04/AI-Video-Assistant)
+### `03` — [Bodha](https://github.com/AdetyaJamwal04/Bodha-Understand-Anything-You-Watch)
 
 **Multimodal Video Intelligence Platform**
 
 Full-stack platform that transforms video/audio content into structured intelligence. Faster-Whisper transcription with int8 quantization, session-isolated conversational RAG over ChromaDB with exact timestamp citations, structured executive summaries via Mistral AI, multi-language translation, and publication-ready PDF/Markdown export.
 
 ```
-VIDEO/AUDIO → FASTER-WHISPER (CTranslate2) → TRANSCRIPT
+VIDEO/AUDIO → FASTER-WHISPER (CTranslate2, int8) → TRANSCRIPT
   → STRUCTURED INTELLIGENCE (Mistral + Pydantic schemas)
-  → CONVERSATIONAL RAG (ChromaDB, session-isolated)
+  → CONVERSATIONAL RAG (ChromaDB, session-isolated, [MM:SS] citations)
   → MULTI-LANGUAGE TRANSLATION → PDF/MD EXPORT
 ```
 
@@ -171,8 +173,8 @@ VIDEO/AUDIO → FASTER-WHISPER (CTranslate2) → TRANSCRIPT
 |---|---|
 | **Backend** | `FastAPI` · `Faster-Whisper` · `ChromaDB` · `Mistral AI` · `SSE Streaming` |
 | **Frontend** | `Next.js 15` · `TypeScript` · `Tailwind CSS` |
-| **Infrastructure** | `Docker` · `docker-compose` · `.github` CI · `pre-commit` hooks |
-| **Security** | SSRF defense · URL validation · 5 GB disk quota with TTL |
+| **Infrastructure** | `Docker` · `docker-compose` · `GitHub Actions CI` · `pre-commit` hooks |
+| **Security** | SSRF defense · URL validation · file-type verification · 5 GB disk quota with TTL |
 
 ---
 
@@ -201,10 +203,10 @@ TELEMETRY (17 sensors) → FEATURE ENGINEERING (188 features)
 |---|---|
 | **GenAI & Agents** | LangGraph · LangChain · Google Gemini · Mistral AI · Groq |
 | **Retrieval & NLP** | Cross-Encoders · DeBERTa NLI · Sentence Transformers · ChromaDB · Tavily · Brave |
-| **ML / Deep Learning** | PyTorch · scikit-learn · TensorFlow · Faster-Whisper · LSTM · Autoencoders |
-| **Backend** | FastAPI · Pydantic · PostgreSQL · SQLAlchemy · Alembic · SSE Streaming |
-| **Frontend** | Next.js 15 · TypeScript · Tailwind CSS · Streamlit |
-| **Infrastructure** | Docker · Docker Compose · GitHub Actions · pre-commit · pytest · ruff · uv |
+| **ML / Deep Learning** | PyTorch · scikit-learn · TensorFlow · Faster-Whisper · LSTM · Autoencoders · DDPM |
+| **Backend** | FastAPI · Pydantic · Redis · SQLAlchemy · Alembic · SSE Streaming |
+| **Frontend** | React 18 · Vite · Next.js 15 · TypeScript · Tailwind CSS · Streamlit |
+| **Cloud & Infrastructure** | Google Cloud Run · Firebase Hosting · Docker · Docker Compose · GitHub Actions · pre-commit · pytest · ruff · uv |
 
 ---
 
